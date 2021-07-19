@@ -131,13 +131,14 @@ function buildCharts(sample) {
       title: {text: "<b> Belly Button Washing Frequency</b> <br> Scrubs per Day</b>"},
       type: "indicator",
       mode: "gauge+number",
-      gauge: { axis: { range: [null,10], tickwidth: 1, tickcolor: "" },
+      gauge: { axis: { range: [null,10] },
                 steps: [
                   {range: [0,2], color: "red"},
                   {range: [2,4], color: "orange"},
                   {range: [4,6], color: "yellow"},
                   {range: [6,8], color: "limegreen"},
-                  {range: [8,10], color: "green"}
+                  {range: [8,10], color: "green"},
+        //          {tickwidth: 0.25, tickcolor: "black"}
                 ]}
       }
     ];
